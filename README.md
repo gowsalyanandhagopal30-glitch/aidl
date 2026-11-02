@@ -39,17 +39,17 @@ Registeration Number :212225230085
 
 ## IColorService.aidl
 ```
-/*
+
 package com.example.aidlserver;
 
 interface IColorService {
     int getRandomColor();
 }
-*/
+
 ```
 ## ColorService.java
 ```
-/*
+
 package com.example.aidlserver;
 
 import android.app.Service;
@@ -77,11 +77,11 @@ public class ColorService extends Service {
         return binder;
     }
 }
-*/
+
 ```
 ## AndroidManifest.xml
 ```
-/*
+
 <service
     android:name=".ColorService"
     android:exported="true"
@@ -92,24 +92,24 @@ public class ColorService extends Service {
     </intent-filter>
 
 </service>
-*/
+
 ```
 
 ## Client App
 
 ## IColorService.aidl
 ```
-/*
+
 package com.example.aidlserver;
 
 interface IColorService {
     int getRandomColor();
 }
-*/
+
 ```
 ## activity_main.xml
 ```
-/*
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -126,11 +126,11 @@ interface IColorService {
         android:textSize="24sp" />
 
 </LinearLayout>
-*/
+
 ```
 ## MainActivity.java
 ```
-/*
+
 package com.example.aidlclient;
 
 import android.content.ComponentName;
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-*/
+
 ```
 ## Client AndroidManifest.xml
 ```
